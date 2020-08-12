@@ -1,0 +1,21 @@
+
+li {
+  position: relative;
+}
+li:hover .action {
+  display: block;
+}
+.action {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px;
+}
+
+.error-message {
+  margin-left: 0.8rem;
+  color: red;
+  font-size: smaller;
+}

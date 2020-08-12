@@ -1,18 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { ActiveComponent } from './active/active.component';
+import { CompletedComponent } from './completed/completed.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ActiveComponent,
+    CompletedComponent,
+    EditComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        MatDialogModule
+    ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [EditComponent]
 })
 export class AppModule { }
